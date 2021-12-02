@@ -1,0 +1,12 @@
+.Preview {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5rem;
+}
+
+.Preview-html {
+	flex: 1;
+	background: var(--bg-secondary);
+	border-radius: var(--radius);
+	padding: 0.5rem;
+}
