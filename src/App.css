@@ -4,25 +4,18 @@
 }
 
 .App-main {
-	display: grid;
+	display: flex;
+	flex-flow: column nowrap;
 	padding: 2rem;
 	gap: 2rem;
-	grid-template-columns: repeat(2, 1fr);
 	height: 100%;
 	min-height: calc(100vh - 3.5rem);
 	background: var(--bg);
 }
 
-.btn {
-	height: 3rem;
-	border: 2px solid var(--btn);
-	color: var(--btn-text);
-	background: transparent;
-	border-radius: var(--radius);
-	font-size: 1rem;
-	cursor: pointer;
-}
-
-.btn:hover {
-	background: var(--btn);
+@media screen and (min-width: 50.75rem) {
+	.App-main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
 }

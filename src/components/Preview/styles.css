@@ -2,11 +2,29 @@
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 0.5rem;
+	height: 80vh;
+	max-height: 100%;
+	overflow: auto;
 }
 
 .Preview-html {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem;
 	flex: 1;
 	background: var(--bg-secondary);
 	border-radius: var(--radius);
-	padding: 0.5rem;
+	padding: 1rem;
+	overflow: auto;
+}
+
+.Preview-html ul,
+.Preview-html ol {
+	padding-left: 2rem;
+}
+
+@media screen and (min-width: 25.75rem) {
+	.Preview-html {
+		padding: 2rem;
+	}
 }

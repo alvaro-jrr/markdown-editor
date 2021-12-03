@@ -1,9 +1,11 @@
 import useMarkdown from "hooks/useMarkdown";
-import { md } from "./settings";
+import { Remarkable } from "remarkable";
 import "./styles.css";
 
 const Preview = ({ markdownText = "# Text right here" } = {}) => {
 	const { markdown } = useMarkdown();
+
+	const md = new Remarkable();
 
 	const markdownToUse = markdown ?? markdownText;
 

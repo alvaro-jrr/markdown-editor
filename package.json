@@ -5,6 +5,7 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^4.5.0",
     "@fontsource/outfit": "^4.5.0",
+    "@fontsource/roboto": "^4.5.1",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",

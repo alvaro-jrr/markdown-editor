@@ -2,17 +2,20 @@
 	display: flex;
 	flex-flow: column nowrap;
 	row-gap: 0.5rem;
+	height: 80vh;
+	max-height: 100%;
 }
 
-.FormEditor textarea {
+.FormEditor-editor {
 	resize: none;
 	flex: 1;
 	background: var(--bg-secondary);
 	border-radius: var(--radius);
 	border: none;
 	padding: 0.5rem;
+	font: 14px var(--font-mono);
 }
 
-.FormEditor textarea:focus {
+.FormEditor-editor:focus {
 	outline: none;
 }

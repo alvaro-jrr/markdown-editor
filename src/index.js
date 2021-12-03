@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import "@fontsource/outfit";
+import "@fontsource/roboto";
 import "@fontsource/jetbrains-mono";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
