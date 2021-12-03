@@ -9,7 +9,7 @@ const Header = () => {
 
 			<a
 				className="Header-icon"
-				href="https://github.com/alvaro-jrr/todo-app"
+				href="https://github.com/alvaro-jrr/markdown-editor"
 				title="Find me on Github"
 			>
 				<AiFillGithub size="1.5rem" />
