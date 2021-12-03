@@ -1,28 +1,24 @@
+import React, { useCallback } from "react";
 import useMarkdown from "hooks/useMarkdown";
-import React, { useState } from "react";
 import "./styles.css";
 
 const FormEditor = () => {
-	const { setMarkdown } = useMarkdown();
-	const [mdText, setMdText] = useState("");
+	const { markdown, setMarkdown } = useMarkdown();
 
-	const handleSubmit = (evt) => {
-		evt.preventDefault();
-
-		if (!mdText) return null;
-
-		setMarkdown(mdText);
-	};
-
-	const handleChange = (evt) => setMdText(evt.target.value);
+	const handleChange = useCallback(
+		(evt) => setMarkdown(evt.target.value),
+		[setMarkdown]
+	);
 
 	return (
-		<form className="FormEditor" onSubmit={handleSubmit}>
+		<form className="FormEditor">
 			<h2>Editor</h2>
 
-			<textarea onChange={handleChange}></textarea>
-
-			<button className="btn">Convertir</button>
+			<textarea
+				className="FormEditor-editor"
+				onChange={handleChange}
+				value={markdown}
+			></textarea>
 		</form>
 	);
 };

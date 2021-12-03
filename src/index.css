@@ -1,20 +1,67 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "JetBrains Mono", monospace;
-}
-
 :root {
 	--main: #ff6e6c;
 	--bg: #ffffff;
 	--paragraph: #1f1235;
-	--btn-text: #1f1235;
-	--btn: #ff6e6c;
 	--headline: #1f1235;
 	--bg-secondary: #f4effc;
 	--radius: 0.25rem;
+	--font-mono: "JetBrains Mono", monospace;
 }
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* Heading Settings */
 
 h1,
 h2,
@@ -28,4 +75,8 @@ h6 {
 
 h1 {
 	font-size: 1.65rem;
+}
+
+code {
+	font: 14px var(--font-mono);
 }

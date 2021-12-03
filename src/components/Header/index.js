@@ -12,7 +12,7 @@ const Header = () => {
 				href="https://github.com/alvaro-jrr/todo-app"
 				title="Find me on Github"
 			>
-				<AiFillGithub />
+				<AiFillGithub size="1.25rem" />
 			</a>
 		</header>
 	);
